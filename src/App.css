@@ -1,0 +1,252 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.input-container button {
+  padding: 0.75rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  list-style: none;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.task-list li {
+  background: #f0f2f5;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list .btns button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit {
+  background-color: #ffc107;
+  color: white;
+}
+
+.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.clear-all {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #e60000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.clear-all:hover {
+  background-color: #c70000;
+}
+.clear-all:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+.task-list li.completed {
+  text-decoration: line-through;
+  background-color: #d4edda;
+}
+.task-list li.completed .btns button {
+  background-color: #28a745;
+}
+.task-list li.completed .btns button:hover {
+  background-color: #218838;
+}
+.task-list li.completed .btns button.edit {
+  background-color: #ffc107;
+}
+.task-list li.completed .btns button.edit:hover {
+  background-color: #e0a800;
+}
+.task-list li.completed .btns button.delete {
+  background-color: #dc3545;
+}
+.task-list li.completed .btns button.delete:hover {
+  background-color: #c82333;
+}  */
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 90vh;
+}
+
+header h1 {
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.input-container button {
+  padding: 0.75rem 1.2rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.input-container button:hover {
+  background-color: #0056b3;
+}
+
+.task-list {
+  list-style: none;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.task-list li {
+  background: #f0f2f5;
+  padding: 0.75rem;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-list .btns button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.7rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit {
+  background-color: #ffc107;
+  color: white;
+}
+
+.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.clear-all {
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
+  background-color: #e60000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+.clear-all:hover {
+  background-color: #c70000;
+}
+.clear-all:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}   
